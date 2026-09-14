@@ -1,0 +1,76 @@
+/* ── projects page responsive styles ── */
+
+/* ── phones (0 – 575px) ── */
+@media (max-width: 575px) {
+  .projects-main {
+    padding-top: 24px !important;
+    padding-bottom: 24px !important;
+    gap: 10px !important;
+  }
+
+  .projects-character img {
+    width: 56px !important;
+    height: 56px !important;
+  }
+
+  .projects-character {
+    margin-bottom: -8px;
+  }
+
+  .projects-heading {
+    font-size: 1.6rem !important;
+  }
+
+  /* single column on phones */
+  .projects-grid {
+    grid-template-columns: 1fr !important;
+    padding: 0 40px !important;
+    margin-top: 8px !important;
+  }
+
+  .projects-card {
+    padding: 16px 22px !important;
+    border-radius: 14px !important;
+  }
+
+  .projects-backlink {
+    margin-top: 20px !important;
+  }
+}
+
+/* ── large phones sideways (576px – 767px) ── */
+@media (min-width: 576px) and (max-width: 767px) {
+  .projects-main {
+    gap: 12px !important;
+  }
+
+  .projects-character img {
+    width: 64px !important;
+    height: 64px !important;
+  }
+
+  .projects-heading {
+    font-size: 1.8rem !important;
+  }
+
+  /* single column here too — cards are wide */
+  .projects-grid {
+    grid-template-columns: 1fr !important;
+    max-width: 480px !important;
+    padding: 0 48px !important;
+    margin-top: 8px !important;
+  }
+
+  .projects-backlink {
+    margin-top: 20px !important;
+  }
+}
+
+/* ── tablets (768px – 991px) ── */
+@media (min-width: 768px) and (max-width: 991px) {
+  .projects-grid {
+    max-width: 600px !important;
+    grid-template-columns: 1fr !important;
+    padding: 0 56px !important;
+  }
+}

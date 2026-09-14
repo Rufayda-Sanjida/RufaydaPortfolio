@@ -1,0 +1,78 @@
+/* ── experience page responsive styles ── */
+
+/* ── phones (0 – 575px) ── */
+@media (max-width: 575px) {
+  .exp-main {
+    padding-top: 24px !important;
+    padding-bottom: 24px !important;
+    gap: 10px !important;
+  }
+
+  .exp-character img {
+    width: 56px !important;
+    height: 56px !important;
+  }
+
+  .exp-character {
+    margin-bottom: -8px;
+  }
+
+  .exp-heading {
+    font-size: 1.6rem !important;
+  }
+
+  .exp-timeline {
+    padding: 0 40px !important;
+    margin-top: 8px !important;
+  }
+
+  .exp-role {
+    font-size: 13px !important;
+  }
+
+  .exp-description {
+    font-size: 12px !important;
+  }
+
+  .exp-backlink {
+    margin-top: 20px !important;
+  }
+}
+
+/* ── large phones sideways (576px – 767px) ── */
+@media (min-width: 576px) and (max-width: 767px) {
+  .exp-main {
+    gap: 12px !important;
+  }
+
+  .exp-character img {
+    width: 64px !important;
+    height: 64px !important;
+  }
+
+  .exp-heading {
+    font-size: 1.8rem !important;
+  }
+
+  .exp-timeline {
+    max-width: 480px !important;
+    padding: 0 48px !important;
+    margin-top: 8px !important;
+  }
+
+  .exp-backlink {
+    margin-top: 20px !important;
+  }
+}
+
+/* ── tablets (768px – 991px) ── */
+@media (min-width: 768px) and (max-width: 991px) {
+  .exp-timeline {
+    max-width: 580px !important;
+    padding: 0 56px !important;
+  }
+
+  .exp-backlink {
+    margin-top: 20px !important;
+  }
+}

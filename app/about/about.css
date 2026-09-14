@@ -1,0 +1,70 @@
+/* â”€â”€ about page responsive styles â”€â”€ */
+
+/* â”€â”€ phones (0 â€“ 575px) â”€â”€ */
+@media (max-width: 575px) {
+  .about-main {
+    padding: 32px 20px !important;
+    align-items: flex-start !important;
+  }
+
+  /* stack photo on top, text below */
+  .about-layout {
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 8px !important;
+  }
+
+  .about-photo {
+    width: 200px !important;
+    height: auto !important;
+    max-width: 200px !important;
+  }
+
+  .about-name {
+    font-size: 2rem !important;
+  }
+
+  .about-meta {
+    font-size: 14px !important;
+  }
+
+  .about-bio p {
+    font-size: 15px !important;
+  }
+}
+
+/* â”€â”€ large phones sideways (576px â€“ 767px) â”€â”€ */
+@media (min-width: 576px) and (max-width: 767px) {
+  .about-layout {
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 12px !important;
+  }
+
+  .about-photo {
+    width: 260px !important;
+    height: auto !important;
+    max-width: 260px !important;
+  }
+
+  .about-name {
+    font-size: 2.8rem !important;
+  }
+}
+
+/* â”€â”€ tablets (768px â€“ 991px) â”€â”€ */
+@media (min-width: 768px) and (max-width: 991px) {
+  .about-layout {
+    gap: 32px !important;
+  }
+
+  .about-photo {
+    width: 280px !important;
+    height: auto !important;
+    max-width: 280px !important;
+  }
+
+  .about-name {
+    font-size: 3rem !important;
+  }
+}

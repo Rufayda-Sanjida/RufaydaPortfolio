@@ -1,0 +1,86 @@
+/* ── achievements page responsive styles ── */
+
+/* ── phones (0 – 575px) ── */
+@media (max-width: 575px) {
+  .ach-main {
+    padding-top: 24px !important;
+    padding-bottom: 24px !important;
+    gap: 10px !important;
+  }
+
+  .ach-character img {
+    width: 56px !important;
+    height: 56px !important;
+  }
+
+  .ach-character {
+    margin-bottom: -8px;
+  }
+
+  .ach-heading {
+    font-size: 1.6rem !important;
+  }
+
+  .ach-list {
+    padding: 0 40px !important;
+    margin-top: 8px !important;
+  }
+
+  .ach-card {
+    padding: 16px 20px !important;
+    border-radius: 14px !important;
+    gap: 14px !important;
+  }
+
+  .ach-emoji {
+    font-size: 22px !important;
+  }
+
+  .ach-title {
+    font-size: 13px !important;
+  }
+
+  .ach-description {
+    font-size: 12px !important;
+  }
+
+  .ach-backlink {
+    margin-top: 20px !important;
+  }
+}
+
+/* ── large phones sideways (576px – 767px) ── */
+@media (min-width: 576px) and (max-width: 767px) {
+  .ach-main {
+    gap: 12px !important;
+  }
+
+  .ach-character img {
+    width: 64px !important;
+    height: 64px !important;
+  }
+
+  .ach-heading {
+    font-size: 1.8rem !important;
+  }
+
+  .ach-list {
+    padding: 0 48px !important;
+    margin-top: 8px !important;
+  }
+
+  .ach-backlink {
+    margin-top: 20px !important;
+  }
+}
+
+/* ── tablets (768px – 991px) ── */
+@media (min-width: 768px) and (max-width: 991px) {
+  .ach-list {
+    padding: 0 56px !important;
+  }
+
+  .ach-backlink {
+    margin-top: 20px !important;
+  }
+}

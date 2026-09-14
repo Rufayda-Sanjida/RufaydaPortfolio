@@ -1,0 +1,64 @@
+/* ── skills page responsive styles ── */
+
+/* ── phones (0 – 575px) ── */
+@media (max-width: 575px) {
+  .skills-main {
+    padding-top: 24px !important;
+    padding-bottom: 24px !important;
+    gap: 10px !important;
+  }
+
+  .skills-character img {
+    width: 56px !important;
+    height: 56px !important;
+  }
+
+  .skills-character {
+    margin-bottom: -8px;
+  }
+
+  .skills-heading {
+    font-size: 1.6rem !important;
+  }
+
+  .skills-list {
+    gap: 8px !important;
+    padding: 0 28px !important;
+    margin-top: 12px !important;
+  }
+
+  .skills-card {
+    padding: 14px 18px !important;
+    border-radius: 12px !important;
+  }
+
+  .skills-backlink {
+    margin-top: 20px !important;
+  }
+}
+
+/* ── large phones sideways (576px – 767px) ── */
+@media (min-width: 576px) and (max-width: 767px) {
+  .skills-main {
+    gap: 12px !important;
+  }
+
+  .skills-character img {
+    width: 64px !important;
+    height: 64px !important;
+  }
+
+  .skills-heading {
+    font-size: 1.8rem !important;
+  }
+
+  .skills-list {
+    max-width: 420px !important;
+    padding: 0 28px !important;
+    margin-top: 12px !important;
+  }
+
+  .skills-backlink {
+    margin-top: 20px !important;
+  }
+}

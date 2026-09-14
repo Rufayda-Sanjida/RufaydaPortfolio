@@ -1,0 +1,63 @@
+/* [project]/app/skills/skills.css [app-client] (css) */
+@media (max-width: 575px) {
+  .skills-main {
+    gap: 10px !important;
+    padding-top: 24px !important;
+    padding-bottom: 24px !important;
+  }
+
+  .skills-character img {
+    width: 56px !important;
+    height: 56px !important;
+  }
+
+  .skills-character {
+    margin-bottom: -8px;
+  }
+
+  .skills-heading {
+    font-size: 1.6rem !important;
+  }
+
+  .skills-list {
+    gap: 8px !important;
+    margin-top: 12px !important;
+    padding: 0 28px !important;
+  }
+
+  .skills-card {
+    border-radius: 12px !important;
+    padding: 14px 18px !important;
+  }
+
+  .skills-backlink {
+    margin-top: 20px !important;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .skills-main {
+    gap: 12px !important;
+  }
+
+  .skills-character img {
+    width: 64px !important;
+    height: 64px !important;
+  }
+
+  .skills-heading {
+    font-size: 1.8rem !important;
+  }
+
+  .skills-list {
+    max-width: 420px !important;
+    margin-top: 12px !important;
+    padding: 0 28px !important;
+  }
+
+  .skills-backlink {
+    margin-top: 20px !important;
+  }
+}
+
+/*# sourceMappingURL=app_skills_skills_1mq2x3b.css.map*/

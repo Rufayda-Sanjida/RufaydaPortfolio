@@ -1,0 +1,115 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-y: auto;
+}
+
+/* ── responsive: phones (0 – 575px) ── */
+@media (max-width: 575px) {
+  .hero-main {
+    padding-top: 40px !important;
+    padding-bottom: 32px !important;
+  }
+
+  .hero-nav-gap {
+    margin-top: 28px !important;
+  }
+
+  /* character — shrink image, shift up with negative margin-top */
+  .hero-character img {
+    width: 82px !important;
+    height: 82px !important;
+  }
+
+  .hero-character {
+    margin-top: -32px;
+    margin-bottom: -2px;
+  }
+
+  .hero-name {
+    font-size: 2.7rem !important;
+    color: black !important;
+  }
+
+  .hero-title {
+    font-size: 0.95rem !important;
+    height: auto !important;
+    margin-top: 8px !important;
+    letter-spacing: 0.15em !important;
+  }
+
+  /* nav column, fixed width so all buttons match */
+  .hero-nav {
+    max-width: 270px !important;
+    width: 270px !important;
+  }
+
+  .hero-nav-inner {
+    flex-direction: column !important;
+    gap: 10px !important;
+    align-items: stretch !important;
+  }
+
+  /* all buttons same width */
+  .hero-btn {
+    padding: 18px 0 !important;
+    width: 100% !important;
+    justify-content: center !important;
+    box-sizing: border-box !important;
+  }
+}
+
+/* ── responsive: large phones sideways (576px – 767px) ── */
+@media (min-width: 576px) and (max-width: 767px) {
+  .hero-main {
+    padding-top: 64px !important;
+  }
+
+  .hero-character {
+    transform: scale(0.7);
+    transform-origin: center top;
+    margin-bottom: -22px;
+  }
+
+  .hero-name {
+    font-size: 3rem !important;
+  }
+
+  .hero-title {
+    font-size: 1rem !important;
+  }
+
+  .hero-btn {
+    padding: 20px 28px !important;
+  }
+}
+
+.social-link:hover {
+  color: #1c1c1e !important;
+}
+
+.email-link:hover {
+  text-decoration: underline !important;
+}
