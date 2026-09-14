@@ -8,9 +8,9 @@ import BackLink from "../components/BackLink";
 import "./contact.css";
 
 const EMAIL = "rufaydasan@gmail.com";
-const LINKEDIN = "https://linkedin.com/in/yourhandle";
-const GITHUB = "https://github.com/yourhandle";
-const DISCORD = "rufaydaSan";
+const LINKEDIN = "https://linkedin.com/in/rufayda-sanjida-047187218;
+const GITHUB = "https://github.com/Rufayda-Sanjida";
+const DISCORD = "rufaydaSanjida";
 
 // Main contact card
 function ContactCard() {
