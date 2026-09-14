@@ -8,7 +8,7 @@ import BackLink from "../components/BackLink";
 import "./contact.css";
 
 const EMAIL = "rufaydasan@gmail.com";
-const LINKEDIN = "https://linkedin.com/in/rufayda-sanjida-047187218;
+const LINKEDIN = "https://linkedin.com/in/rufayda-sanjida-047187218";
 const GITHUB = "https://github.com/Rufayda-Sanjida";
 const DISCORD = "rufaydaSanjida";
 
