@@ -3,6 +3,7 @@
 // /v2 — single-page portfolio. Everything (resume, education, experience,
 // projects, skills, awards, contact) lives on one scrollable page.
 
+import { useState } from "react";
 import { motion } from "framer-motion";
 import Character from "../components/Character";
 import "./v2.css";
@@ -113,6 +114,28 @@ const awards = [
 ];
 // ─────────────────────────────────────────────────────────────────────────────
 
+// Copies the email address on click — mailto: links do nothing for visitors
+// without a mail app set up. Falls back to mailto: if the clipboard is blocked.
+function EmailButton({ className, label = "Email" }: { className: string; label?: string }) {
+  const [copied, setCopied] = useState(false);
+
+  async function handleClick() {
+    try {
+      await navigator.clipboard.writeText(EMAIL);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    } catch {
+      window.location.href = `mailto:${EMAIL}`;
+    }
+  }
+
+  return (
+    <button type="button" onClick={handleClick} className={className} title={`Copy ${EMAIL}`}>
+      {copied ? "Copied! ✓" : label}
+    </button>
+  );
+}
+
 // Fades each section in as it scrolls into view
 function Section({
   id,
@@ -161,23 +184,19 @@ function Hero() {
         <p className="v2-tagline">Software Engineer</p>
 
         <p className="v2-edu">
-          Senior studying <strong>Computer Science</strong> (Minor in Mathematics)
-          <br />
-          at <strong>Drexel University</strong> · Graduating <strong>June 2027</strong>
+          Computer Science student at Drexel University · Graduating June 2027
         </p>
 
         <p className="v2-status">
           <span className="v2-dot" />
-          Previously SWE Co-op at eMoney Advisor (Fidelity) & R&D Co-op at Hologic
+          <span>Previously SWE Co-op at eMoney Advisor (Fidelity Investments)</span>
         </p>
 
         <div className="v2-cta">
           <a href={RESUME} target="_blank" rel="noopener noreferrer" className="v2-btn v2-btn-primary">
             Resume ↗
           </a>
-          <a href={`mailto:${EMAIL}`} className="v2-btn">
-            Email
-          </a>
+          <EmailButton className="v2-btn" />
           <a href={LINKEDIN} target="_blank" rel="noopener noreferrer" className="v2-btn">
             LinkedIn
           </a>
@@ -308,9 +327,10 @@ export default function PortfolioV2() {
               Open to new-grad Software Engineering roles starting 2027. Reach out if you want to
               work on something together or think I&apos;d be a good fit.
             </p>
-            <a href={`mailto:${EMAIL}`} className="v2-link v2-contact-email">
-              {EMAIL}
-            </a>
+            <div className="v2-contact-email-row">
+              <span className="v2-contact-email">{EMAIL}</span>
+              <EmailButton className="v2-copy-btn" label="Copy" />
+            </div>
             <div className="v2-contact-links">
               <a href={LINKEDIN} target="_blank" rel="noopener noreferrer">
                 LinkedIn

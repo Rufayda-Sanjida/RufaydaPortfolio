@@ -114,10 +114,14 @@ html {
 .v2-status {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: 8px;
+  max-width: 100%;
   margin: 14px 0 0;
   font-size: 13px;
+  line-height: 1.4;
   color: #636366;
+  text-align: center;
   background: #f2f2f7;
   border-radius: 999px;
   padding: 6px 14px;
@@ -147,6 +151,8 @@ html {
   padding: 11px 20px;
   background: rgba(255, 255, 255, 0.3);
   transition: all 0.15s ease;
+  font-family: inherit;
+  cursor: pointer;
 }
 
 .v2-btn:hover {
@@ -386,9 +392,34 @@ html {
   gap: 12px;
 }
 
+.v2-contact-email-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
 .v2-contact-email {
   font-size: 16px;
   letter-spacing: 0.03em;
+  color: #1c1c1e;
+  user-select: all;
+}
+
+.v2-copy-btn {
+  font-family: inherit;
+  font-size: 12px;
+  color: #007aff;
+  background: white;
+  border: 1px solid #d1d1d6;
+  border-radius: 8px;
+  padding: 3px 10px;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+
+.v2-copy-btn:hover {
+  background: #e5e5ea;
 }
 
 .v2-contact-links {
@@ -444,8 +475,10 @@ html {
     font-size: 15px;
   }
 
-  .v2-edu br {
-    display: none;
+  .v2-status {
+    font-size: 11.5px;
+    padding: 6px 12px;
+    border-radius: 14px;
   }
 
   .v2-card {
